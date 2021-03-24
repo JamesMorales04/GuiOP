@@ -101,5 +101,28 @@ namespace GuiOP
                     break;
             }
         }
+        public string Response()
+        {
+            var seed = Environment.TickCount;
+            var random = new Random(seed);
+
+            var value = random.Next(0, 2);
+            string msg = "";
+
+            switch (value)
+            {
+                case 0:
+                    msg = "{codterm:0,msg:\"OK\"}";
+                    break;
+                case 1:
+                    msg = "{codterm:1,msg:\"0\"}";
+                    break;
+                case 2:
+                    msg = "{codterm:2,msg:\"Err\"}";
+                    break;
+            }
+            return msg;
+        }
+
     }
 }

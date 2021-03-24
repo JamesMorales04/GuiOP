@@ -71,7 +71,7 @@ namespace GuiOP
 
         private void folders(object sender, EventArgs e)
         {
-            string[] dirs = Directory.GetDirectories(@"C:\parcial2so\", "p*", SearchOption.TopDirectoryOnly);
+            string[] dirs = Directory.GetDirectories(@"C:\parcial2so\", "*", SearchOption.TopDirectoryOnly);
 
             Dispatcher.Invoke(() => {
                 listViewButton.Items.Clear();
@@ -80,7 +80,7 @@ namespace GuiOP
             {
                 Dispatcher.Invoke(() => {
                     Button button = new Button();
-                    button.Content = dirs[i].Replace("\\", "");
+                    button.Content = dirs[i].Split('\\')[2];
 
                     button.Click += new RoutedEventHandler(folder_Click);
 

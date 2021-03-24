@@ -94,7 +94,7 @@ namespace GuiOP
                         }
                     }
                     messages.Actions(data);
-                    byte[] msg = Encoding.ASCII.GetBytes(data);
+                    byte[] msg = Encoding.ASCII.GetBytes(messages.Response());
                     handler.Send(msg);
                     handler.Shutdown(SocketShutdown.Both);
                     handler.Close();
