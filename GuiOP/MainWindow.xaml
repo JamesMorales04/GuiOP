@@ -24,10 +24,10 @@
         <Label Content="App 2" HorizontalAlignment="Left" Margin="12,72,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="44"/>
         <Label Content="App 3" HorizontalAlignment="Left" Margin="12,103,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="44"/>
         <Label Content="System stats:" HorizontalAlignment="Left" Margin="237,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Padding="0,5,5,5" Height="26" Width="78"/>
-        <TextBox x:Name="statusBox" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="237,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Background="Black" Foreground="White"/>
+        <TextBox x:Name="statusBox" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="237,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Background="Black" Foreground="White" IsReadOnly="True"/>
         <Button Content="Create" Grid.Column="1" HorizontalAlignment="Left" Margin="135,44,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click_4"/>
         <Label Content="File Manager:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Padding="0,5,5,5" Height="26" Width="82"/>
-        <TextBox x:Name="transactionBox" HorizontalAlignment="Left" Height="180" Margin="10,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="697" Grid.ColumnSpan="2" Background="Black" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="transactionBox" HorizontalAlignment="Left" Height="180" Margin="10,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="697" Grid.ColumnSpan="2" Background="Black" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
         <TextBox x:Name="folderInputBox" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <Label x:Name="App1PID" Content="PID: " HorizontalAlignment="Left" Margin="61,41,0,0" VerticalAlignment="Top"/>
         <Label x:Name="App2PID" Content="PID: " HorizontalAlignment="Left" Margin="61,72,0,0" VerticalAlignment="Top"/>
