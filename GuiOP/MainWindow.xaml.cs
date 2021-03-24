@@ -71,7 +71,7 @@ namespace GuiOP
 
         private void folders(object sender, EventArgs e)
         {
-            string[] dirs = Directory.GetDirectories(@"\", "p*", SearchOption.TopDirectoryOnly);
+            string[] dirs = Directory.GetDirectories(@"C:\parcial2so\", "p*", SearchOption.TopDirectoryOnly);
 
             Dispatcher.Invoke(() => {
                 listViewButton.Items.Clear();
