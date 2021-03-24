@@ -30,9 +30,7 @@
         <Label x:Name="App1PID" Content="PID: " HorizontalAlignment="Left" Margin="61,41,0,0" VerticalAlignment="Top"/>
         <Label x:Name="App2PID" Content="PID: " HorizontalAlignment="Left" Margin="61,72,0,0" VerticalAlignment="Top"/>
         <Label x:Name="App3PID" Content="PID: " HorizontalAlignment="Left" Margin="61,103,0,0" VerticalAlignment="Top"/>
-        <ListView x:Name="listViewButton" Grid.Column="1" Margin="10,72,252,226">
-
-        </ListView>
+        <ListView x:Name="listViewButton" Grid.Column="1" Margin="10,72,0,0" HorizontalAlignment="Left" Width="200" Height="125" VerticalAlignment="Top"/>
         <Label Content="Click on a folder to delete" Grid.Column="1" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" FontSize="10"/>
         <Button Content="Shut Down" Grid.Column="1" HorizontalAlignment="Left" Margin="377,198,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_5"/>
 
