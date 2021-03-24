@@ -153,5 +153,10 @@ namespace GuiOP
                 folderInputBox.Text = "";
             }
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            comms.sendMessage("{cmd:shutdown,src:GUI,dest:GestorArc,msg:\"Shut down system.\"}", port);
+        }
     }
 }
