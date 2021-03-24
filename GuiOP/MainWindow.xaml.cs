@@ -92,8 +92,6 @@ namespace GuiOP
         private void folder_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-
-            //comms.WriteToConsole("{cmd:delete,src:GUI,dest:GestorArc,msg:\"" + btn.Content + "\"}");
             comms.sendMessage("{cmd:delete,src:GUI,dest:GestorArc,msg:\"" + btn.Content + "\"}", port);
         }
 

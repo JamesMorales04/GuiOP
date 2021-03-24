@@ -14,7 +14,7 @@
         </Grid.ColumnDefinitions>
         <Label Content="Transaction log:" HorizontalAlignment="Left" Margin="12,198,0,0" VerticalAlignment="Top" FontWeight="Bold" Padding="0,5,5,5" Height="26" Width="95"/>
         <Label Content="Parent app container" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="128"/>
-        <Button x:Name="ParentAppButton" Content="Start" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click"/>
+        <Button x:Name="ParentAppButton" Content="Stop" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click"/>
         <Button x:Name="App1Button" Content="Start" HorizontalAlignment="Left" Margin="145,41,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click_1"/>
         <Button x:Name="App2Button" Content="Start" HorizontalAlignment="Left" Margin="145,72,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click_2"/>
         <Button x:Name="App3Button" Content="Start" HorizontalAlignment="Left" Margin="145,103,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click_3"/>
