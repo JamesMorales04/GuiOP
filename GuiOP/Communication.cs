@@ -116,7 +116,6 @@ namespace GuiOP
             window.Dispatcher.Invoke(() => {
                 window.ParentAppButton.Content = newText;
             });
-
         }
         public void SetAppPid(string app, string pid)
         {

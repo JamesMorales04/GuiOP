@@ -57,7 +57,6 @@ namespace GuiOP
 
             systemStatus(null, EventArgs.Empty);
         }
-
         private void systemStatus(object sender, EventArgs e)
         {
             string system = "CPU USAGE: " + Math.Round(cpuCounter.NextValue(), 2) + "%" + Environment.NewLine;
@@ -68,7 +67,6 @@ namespace GuiOP
                 statusBox.Text = system;
             });
         }
-
         private void folders(object sender, EventArgs e)
         {
             string[] dirs = Directory.GetDirectories(@"C:\parcial2so\", "*", SearchOption.TopDirectoryOnly);
@@ -88,13 +86,11 @@ namespace GuiOP
                 });
             }
         }
-
         private void folder_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
             comms.sendMessage("{cmd:delete,src:GUI,dest:GestorArc,msg:\"" + btn.Content + "\"}", port);
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if ((string)ParentAppButton.Content == "Stop")
@@ -144,7 +140,6 @@ namespace GuiOP
         {
             Environment.Exit(0);
         }
-
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             if (folderInputBox.Text == "")
