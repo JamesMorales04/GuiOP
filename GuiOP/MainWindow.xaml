@@ -1,0 +1,39 @@
+﻿<Window x:Class="GuiOP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuiOP"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="Gui OP" Height="453.742" Width="725.137">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="256*"/>
+            <ColumnDefinition Width="463*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Transaction log:" HorizontalAlignment="Left" Margin="12,198,0,0" VerticalAlignment="Top" FontWeight="Bold" Padding="0,5,5,5" Height="26" Width="95"/>
+        <Label Content="Parent app container" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="128"/>
+        <Button x:Name="ParentAppButton" Content="Start" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click"/>
+        <Button x:Name="App1Button" Content="Start" HorizontalAlignment="Left" Margin="145,41,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click_1"/>
+        <Button x:Name="App2Button" Content="Start" HorizontalAlignment="Left" Margin="145,72,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click_2"/>
+        <Button x:Name="App3Button" Content="Start" HorizontalAlignment="Left" Margin="145,103,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click_3"/>
+        <Label Content="App 1" HorizontalAlignment="Left" Margin="12,41,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="44"/>
+        <Label Content="App 2" HorizontalAlignment="Left" Margin="12,72,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="44"/>
+        <Label Content="App 3" HorizontalAlignment="Left" Margin="12,103,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="44"/>
+        <Label Content="System stats:" HorizontalAlignment="Left" Margin="237,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Padding="0,5,5,5" Height="26" Width="78"/>
+        <TextBox x:Name="statusBox" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="237,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Background="Black" Foreground="White"/>
+        <Button Content="Create" Grid.Column="1" HorizontalAlignment="Left" Margin="135,44,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click_4"/>
+        <Label Content="File Manager:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" Padding="0,5,5,5" Height="26" Width="82"/>
+        <TextBox x:Name="transactionBox" HorizontalAlignment="Left" Height="180" Margin="10,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="697" Grid.ColumnSpan="2" Background="Black" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="folderInputBox" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="App1PID" Content="PID: " HorizontalAlignment="Left" Margin="61,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="App2PID" Content="PID: " HorizontalAlignment="Left" Margin="61,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="App3PID" Content="PID: " HorizontalAlignment="Left" Margin="61,103,0,0" VerticalAlignment="Top"/>
+        <ListView x:Name="listViewButton" Grid.Column="1" Margin="10,72,252,226">
+
+        </ListView>
+        <Label Content="Click on a folder to delete" Grid.Column="1" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" FontSize="10"/>
+
+    </Grid>
+</Window>
