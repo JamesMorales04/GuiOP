@@ -110,8 +110,6 @@ namespace GuiOP
         {
             if ((string)App1Button.Content == "Stop")
             {
-                App1PID.Content = "PID: ";
-                App1Button.Content = "Start";
                 comms.sendMessage("{cmd:halt,src:GUI,dest:APP,msg:\"APP1\"}", port);
             }
             else
@@ -124,8 +122,6 @@ namespace GuiOP
         {
             if ((string)App2Button.Content == "Stop")
             {
-                App2PID.Content = "PID: ";
-                App2Button.Content = "Start";
                 comms.sendMessage("{cmd:halt,src:GUI,dest:APP,msg:\"APP2\"}", port);
             }
             else
@@ -137,8 +133,6 @@ namespace GuiOP
         {
             if ((string)App3Button.Content == "Stop")
             {
-                App3PID.Content = "PID: ";
-                App3Button.Content = "Start";
                 comms.sendMessage("{cmd:halt,src:GUI,dest:APP,msg:\"APP3\"}", port);
             }
             else

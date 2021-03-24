@@ -136,22 +136,46 @@ namespace GuiOP
         public void SetApp1Pid(string text)
         {
             window.Dispatcher.Invoke(() => {
-                window.App1Button.Content = "Stop";
-                window.App1PID.Content = "PID: " + text;
+                if (text == "")
+                {
+                    window.App1Button.Content = "Start";
+                    window.App1PID.Content = "PID: ";
+                }
+                else
+                {
+                    window.App1Button.Content = "Stop";
+                    window.App1PID.Content = "PID: " + text;
+                }
             });
         }
         public void SetApp2Pid(string text)
         {
             window.Dispatcher.Invoke(() => {
-                window.App2Button.Content = "Stop";
-                window.App2PID.Content = "PID: " + text;
+                if (text == "")
+                {
+                    window.App2Button.Content = "Start";
+                    window.App2PID.Content = "PID: ";
+                }
+                else
+                {
+                    window.App2Button.Content = "Stop";
+                    window.App2PID.Content = "PID: " + text;
+                }
             });
         }
         public void SetApp3Pid(string text)
         {
             window.Dispatcher.Invoke(() => {
-                window.App2Button.Content = "Stop";
-                window.App3PID.Content = "PID: " + text;
+                if (text == "")
+                {
+                    window.App2Button.Content = "Start";
+                    window.App3PID.Content = "PID: ";
+                }
+                else
+                {
+                    window.App2Button.Content = "Stop";
+                    window.App3PID.Content = "PID: " + text;
+                }
             });
         }
         public void WriteToConsole(String text)

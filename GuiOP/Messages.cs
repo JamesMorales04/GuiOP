@@ -47,6 +47,9 @@ namespace GuiOP
                 case "send":
                     HandleSend(msgClean);
                     break;
+                case "halt":
+                    HandleHalt(msgClean);
+                    break;
                 case "stop":
                     HandleStop();
                     break;
@@ -55,6 +58,11 @@ namespace GuiOP
         public void HandleStop()
         {
             Environment.Exit(0);
+        }
+        public void HandleHalt(string[] msgClean)
+        {
+            string message = msgClean[3].Replace("\"", "").Split(':')[1];
+            comunication.SetAppPid(message, "");
         }
         public void HandleInfo(string[] msgClean)
         {
