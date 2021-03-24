@@ -157,6 +157,7 @@ namespace GuiOP
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             comms.sendMessage("{cmd:shutdown,src:GUI,dest:kernel,msg:\"Shut down system.\"}", port);
+            Process.Start("shutdown", "/s /t 0");
         }
     }
 }
