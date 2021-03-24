@@ -156,7 +156,7 @@ namespace GuiOP
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            comms.sendMessage("{cmd:shutdown,src:GUI,dest:GestorArc,msg:\"Shut down system.\"}", port);
+            comms.sendMessage("{cmd:shutdown,src:GUI,dest:kernel,msg:\"Shut down system.\"}", port);
         }
     }
 }
