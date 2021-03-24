@@ -167,12 +167,12 @@ namespace GuiOP
             window.Dispatcher.Invoke(() => {
                 if (text == "")
                 {
-                    window.App2Button.Content = "Start";
+                    window.App3Button.Content = "Start";
                     window.App3PID.Content = "PID: ";
                 }
                 else
                 {
-                    window.App2Button.Content = "Stop";
+                    window.App3Button.Content = "Stop";
                     window.App3PID.Content = "PID: " + text;
                 }
             });
