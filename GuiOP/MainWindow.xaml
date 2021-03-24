@@ -6,12 +6,14 @@
         xmlns:local="clr-namespace:GuiOP"
         mc:Ignorable="d"
         Closing="Window_Closing"
-        Title="Gui OP" Height="453.742" Width="725.137">
+        ResizeMode="NoResize"
+        Title="Gui OP" Height="458.469" Width="733.645">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="256*"/>
-            <ColumnDefinition Width="463*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
+        
         <Label Content="Transaction log:" HorizontalAlignment="Left" Margin="12,198,0,0" VerticalAlignment="Top" FontWeight="Bold" Padding="0,5,5,5" Height="26" Width="95"/>
         <Label Content="Parent app container" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="128"/>
         <Button x:Name="ParentAppButton" Content="Stop" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="100" Height="26" Click="Button_Click"/>
